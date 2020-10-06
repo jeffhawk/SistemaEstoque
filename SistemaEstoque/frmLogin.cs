@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace SistemaEstoque
 {
     public partial class frmLogin : Form
@@ -39,6 +41,8 @@ namespace SistemaEstoque
             }
             if (txtUser.Text.Equals("admin") & txtPass.Text.Equals("123456"))
             {
+                
+
                 MessageBox.Show("Login bem sucedido!");
                 this.DialogResult = DialogResult.OK;
                 this.Close();
