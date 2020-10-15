@@ -81,7 +81,7 @@ namespace SistemaEstoque.Banco
                 SqlCommand comando = new SqlCommand();
                 comando.Connection = Utilitarios.ConexaoBanco.conexao;
                 comando.CommandText = " DELETE FROM Produtos WHERE Id_Produto = @Id) ";
-                comando.Parameters.AddWithValue("@Id", Id_Produto);
+                comando.Parameters.AddWithValue("@Id", ID_Produto);
 
 
                 comando.ExecuteNonQuery();
